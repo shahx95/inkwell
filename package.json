@@ -5,18 +5,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
+    "nanoid": "3.1.28",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-mde": "11.5.0",
-    "showdown": "1.9.1",
     "react-split": "2.0.13",
-    "nanoid": "3.1.28"
+    "showdown": "1.9.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "gh-pages": "^4.0.0",
     "vite": "^2.8.0"
   }
 }
