@@ -78,7 +78,7 @@ function App() {
         </Split>
         :
         <div className="no-notes">
-          <img className="no-notes-logo" src="src\logo.png" alt="inkwell logo" />
+          <img className="no-notes-logo" src=".\logo.png" alt="inkwell logo" />
           <h1>You have no notes</h1>
           <button 
             className="first-note" 
