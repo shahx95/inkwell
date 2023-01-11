@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-mde@11.5.0/lib/styles/css/react-mde-all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/inkwell/assets/apple-touch-icon.979a013d.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA81JREFUWEfdl39M1HUYx1/fOxAwGFqIXSdkIJrZBodabQy7g2LuQDAjfxSDSMFlpk5pDcMV80YprDQb0ywJBSSWK+SXkLVmCog4NRBYoiFoXLqIA8IE7q7dFyPP0zjoDlrPP7fb9+55v57n83nen+9HgHck6sjuzSCsAWSMTbSDMbP0sFuaoI7YlIJE2Do2uneoGIxbBHVk0s9jWPmddbabAIzjUv0t0f8/gEQi8PgcHzw9J1NZVU9v7x9mDbdbBwRBQKUMRPW0gjNnL6DT9RCimsv2jFx0Xb8PQdgFQC6fQsIrizh1uokj5dXo9QZR0NtrKkujQ8j44KD9ABaGPYkiwI89nxymo6NrSMjXR87FS1fRpCaQunUf/QN68ZnNOuDi4sTqhCiam69QXFppts7z581m3dpoVq9J542NK0jVZNm2Aw97P8jLsWpy8srFKm+PGb5yNKmJZB8ow8fnIUrLqvippd12ACHKQJY8pyT5rd109/SaiZs2YeLKSPbuK2KafIoId6KyznZT4OAg5Yt8Dd8fP4e7uys7dxXwa0cXi8KDeGz2dHx9p7EtPYdQ1VxaWrVUfF1j4Xmj3gMeHu6sffV5ysqrOVnTgEz2gPj9vfQc8va/TfPFq2jSPiNxVRRV1fV8d+zMXQ13VACBilksWbyAjzIPof2lYyixcoECJydHmn5sxfU+F2JWhHEgr5yGxpZ7uv2IAAQBlkWHYprzXZmH6OvrN0sskUjYuH4ZNacaePaZ+ez4cHBJ/imsBnB0dGDDuqW0tV0jv+CoRU4HqZT4ODUR4UGUHqni06xiBm7N+r8GkEqlpCTHijv46Le1FvlM+2GVyflqm7h+vZMf6pqtPmCt6oAiYCYpyXFsy8gV23t7PPXEHJRKBbv3fEWnrsdq4b9+OCzAVM/7WRwVjOlTKpWQlV1Cy2UtEyc6szI+Al1XDzm5FRgMg34/0rgnwEw/L3E9+272UVh0nLYr14h5MQy/GV4UlZxg+Quh5Bys4Oy5CyPVHN6IZDIPYmMW8vHeQn7r7Bb/EBzkT3CwP49Ml4lznV/wjcXZPhqSu3bg9dei+bLwGEkblvP+zs8xHTSmZdiekYfRaNs3OAuAR2d5E6qah/skV1pbtVSfPE98XDiad7O5cePmaIq03gecnSewI2M9eoOB2tONTJ7khpPTBLL2l6DV/u14tqQw68CbSS8R4O8n+nZlVR0NjZfR6wdfHOwVZgCmea8/f4n+/gF76VnkHdYH7E3ynwAY76vZphQYp8spxi2CeD2P6N6MZIyv5wZjZmmxW9qfvKB/Qj6dMa0AAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAX5JREFUOE+lk0tLAgEUhc9g4zShMS16UZooPqhAC2mjlkiLHuayTfQPgha1C9q1j/5Fu4qiaBGaZNEihSRKrQxNzUdDiDqKMaGQEIaNeffnu/Ddc4nZhbVNgiA2AIjR3JR4nt8i5hzrxX+Ev1eVKgC+mcUSCQ2KEiOT+ajGBAMoioTZpEc2m4NIJEIikcFzOC4MIJf3Qq0ahMvtA01T0Grk6JR24Mx58zfAYtaDfc/Cf/cEhpFgeWkGsVgaR8cecFypMUCjlsGgV6NQKCJf4DCsUyASTcHl9oJls40dTFkMeEuyuH94AcNIMWHUoSLw5PQa+TxX814nkSAIOOxmXF75kUyxIMk2TNuMaKcp7O2fg+d/Hq0OMDqihH3ehO2dXfR0d0GjkcHp8qJc/vz12jWAWEzCZh1HIBiBSjkArVaOC88tvL5Aw5rUANbJMSgU/QiGIniNpREOxwX1qwpQDPVhdWURB4fuquXQY1RQuNbEit1cjqsTJITS+jO1+s5fqU+dreuIwrUAAAAASUVORK5CYII=">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
+    <title>Inkwell</title>
+    <script type="module" crossorigin src="/inkwell/assets/index.1ab2f773.js"></script>
+    <link rel="modulepreload" href="/inkwell/assets/vendor.ccaa1c81.js">
+    <link rel="stylesheet" href="/inkwell/assets/index.30f7ab58.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
