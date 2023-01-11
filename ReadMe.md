@@ -26,7 +26,10 @@ To get started, you'll need to have Node.js and npm (Node Package Manager) insta
 
 ## Todo - features and optimizations
 - Allow note sharing
-- Add timestamp to note
-
+- Backup
+- Search and filtering
+- Tags and labels
+- Import and export 
+    
 ## Contributing
 Please feel free to fork this repository and submit pull requests with any improvements or suggestions you may have.

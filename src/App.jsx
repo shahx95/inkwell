@@ -79,7 +79,7 @@ function App() {
         :
         
         <div className="no-notes">
-          <img className="no-notes-logo" src="./public/docs/assets/images/logo.png" alt="inkwell logo" />
+          <img className="no-notes-logo" src="./docs/assets/images/logo.png" alt="inkwell logo" />
           <a href=''></a>
           <h1>You have no notes</h1>
           <button 
