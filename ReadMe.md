@@ -13,8 +13,8 @@ This project is a no-login note taking app built with ReactJS to demonstrate use
 - delete
 
 ## Screenshots
-![Initial view](readme_assets/initial_view.png)
-![Created note view](readme_assets/note_view.png)
+![Initial view](readme_assets/initial_view.jpeg)
+![Created note view](readme_assets/note_view.jpeg)
 
 ## Installation
 To get started, you'll need to have Node.js and npm (Node Package Manager) installed on your computer.
